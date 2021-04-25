@@ -66,25 +66,43 @@
             <h1><nobr>浜松医科大学 <wbr>医療情報研究会</nobr></h1>
             <h3><nobr>Hamamatsu University <wbr>School of Medicine <wbr>Medinfo Lab</nobr></h3>
         </div>
-        <div class="container-gradation1">
-            <h2 style="margin-bottom: 0px"><nobr>浜松医科大学 <wbr>医療情報研究会</nobr></h2>
-            <h3 style="margin-top: 0px"><nobr>Hamamatsu University <wbr>School of Medicine <wbr>Medinfo Lab <wbr>(HUSM_ML)</nobr></h3>
-            <p style="line-height: 1.5; font-size: 150%">
-
-            わたしたちは2021年に、「ITを用いた医療研究の成果創出」を目的として発足いたしました。<br>
-            この目的達成のため、短期的な取り組みとして<b>医療研究の計画と実行</b>を行い、長期的な取り組みとして<b>医工連携の橋渡しとなる人材の育成</b>を行っております。<br>
-            組織としての目的を持ちつつも、HUSM_MLでは「IT x 医療」を共通の接点とし、各個人の参加目的は自由としております。そのため、学生から教職員まで様々な人たちが各々の目的を持ってHUSM_MLに参加しております。<br>
+        <div class="container-white">
+            <h1>活動内容</h1>
+            <p style="line-height: 1.6; font-size: 110%">
+            活動の主体は学生ですが、教員や職員の方にも参加していただいております。また、特定の活動のみの参加も可能です。興味のある方は<a href="./contact">[お問い合わせ]</a>よりご連絡ください。HUSM_MLの医療研究の取り組みについては<a href="./research">[研究]</a>をご参照ください。
             </p>
+        </div>
+        <div class="container-gradation1 container-half-left">
+            <h2>ジャーナルクラブ</h2>
+            <p style="line-height: 1.6; font-size: 110%">
+            機械学習・深層学習関連の医療研究論文の抄読を定期開催しております。機械学習分野の医療研究は、技術的なドメインは共通であるため、特定の診療科や基礎研究領域に限定しないで抄読論文の選出をしております。<br><br>
+                ジャーナルクラブでは、教職員の方々からの論文抄読の依頼も受付ております。例えば、「最近自分たちの領域でAIを使った論文が出てきているんだけど、機械学習とかよく分からないから抄読してもらいたい。」など、機械学習に関する知識がなくても参加していただくことで医療AIの研究のフロントラインを知る機会にしていただけます。
+            </p>
+        </div>
+        <div class="container-gradation1 container-half-right">
+            <h2>機械学習・深層学習勉強会</h2>
+            <p style="line-height: 1.6; font-size: 110%">
+            AIの根幹技術である機械学習と深層学習の勉強会を行なっております。勉強会は輪読形式で定期開催で行うものと、Kaggleなどを用いて実践的な形式で不定期開催で行うものがあります。<br><br>
+            プログラミング経験の無い方でも、プログラミングスキルアップにも参加していただくことで、最終的に実践レベルに到達できるようなカリキュラムにしております。勉強会はZoomでのハイブリッド開催を行っております。
+            </p>
+        </div>
+        <div class="container-gradation1 container-half-left">
+            <h2>プログラミングスキルアップ</h2>
+            <p style="line-height: 1.6; font-size: 110%">
+            機械学習プログラムのコードが自力で書けるようになることを目標に、Python言語のスキルアップのカリキュラムに取り組んでもらいます。対象者はプログラミング初級者～中級者です。本プログラムには数名のメンターがいるので、いつでも困ったときには質問ができる体制が整っています。<br><br>
+                また、2021年5月より競技プログラミングをベースとした新カリキュラムも始動予定です。
+            </p>
+        </div>
+        <div class="container-white container-half-right">
+            <h1></h1>
             <p>
-            後援：浜松医科大学付属病院医療情報部<br>
-            顧問：木村通男教授<br>
             </p>
         </div>
 <script>
 var half_left  = document.getElementsByClassName('container-half-left');
 var half_right = document.getElementsByClassName('container-half-right');
 for ( var i = 0; i < Math.min(half_left.length, half_right.length); i++ ) {
-    if ( window.innerWidth < 750 ) {
+    if ( window.innerWidth < 650 ) {
         half_left[i].style.height = "auto";
         half_right[i].style.height = "auto";
     }
@@ -98,7 +116,7 @@ $(window).resize(function() {
     var half_left  = document.getElementsByClassName('container-half-left');
     var half_right = document.getElementsByClassName('container-half-right');
     for ( var i = 0; i < Math.min(half_left.length, half_right.length); i++ ) {
-        if ( window.innerWidth < 750 ) {
+        if ( window.innerWidth < 650 ) {
             half_left[i].style.height = "auto";
             half_right[i].style.height = "auto";
         }
