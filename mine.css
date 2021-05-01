@@ -466,6 +466,7 @@ table.coloured tr:nth-child(even){
     .container-quarter-left {
         width: 100%;
         float: none;
+        margin-right: 0px;
     }
     .container-quarter-right {
         width: 100%;
