@@ -18,6 +18,11 @@
     -webkit-user-select:none;
     -webkit-user-drag: none;
 }
+.allow-drag{
+    user-select:auto;
+    -webkit-user-select:text;
+    -webkit-user-drag:auto;
+}
 /* {{{ Header */
 ul.topnav {
     overflow: hidden;
@@ -278,7 +283,14 @@ span.set{
 img {
     width: 80%;
     max-width: 1000px;
-    min-width: 240px;
+}
+
+img.user {
+    width: 100%;
+    pointer-events: none;
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-user-drag: none;
 }
 
 table {
@@ -286,10 +298,21 @@ table {
     -webkit-user-select:none;
     -webkit-user-drag: none;
 }
+
+.container-base {
+    padding: 5px 15vw 20px 15vw;
+    margin: 0 0 8px 0;
+    display: inline-block;
+    width: 100%;
+}
+
 .container-white {
     background-color: #FFFFFF;
     padding: 5px 15vw 20px 15vw;
     margin: 0 0 8px 0;
+    display: inline-block;
+    box-sizing:border-box;
+    width: 100%;
 }
 
 .container-black {
@@ -297,6 +320,9 @@ table {
     padding: 5px 15vw 20px 15vw;
     margin: 0 0 8px 0;
     color: #FFFFFF;
+    display: inline-block;
+    box-sizing:border-box;
+    width: 100%;
 }
 
 .container-gradation1 {
@@ -309,6 +335,17 @@ table {
     padding: 5px 15vw 20px 15vw;
     margin: 0 0 8px 0;
     color: #000000;
+    display: inline-block;
+    box-sizing:border-box;
+    width: 100%;
+}
+
+.container-half {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    box-sizing:border-box;
+    width: 100%;
 }
 
 .container-half-left {
@@ -316,7 +353,7 @@ table {
     display: inline-block;
     padding: 10px 5vw 10px 5vw;
     box-sizing: border-box;
-    float: left;
+    margin-right: 0.4%;
 }
 
 .container-half-right {
@@ -324,7 +361,26 @@ table {
     display: inline-block;
     padding: 10px 5vw 10px 5vw;
     box-sizing: border-box;
-    float: right;
+}
+
+.container-quarter {
+    padding: 0px;
+    display: flex;
+}
+
+.container-quarter-left {
+    width: 49.8%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 0.4%;
+}
+
+.container-quarter-right {
+    width: 49.8%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 p {
@@ -373,6 +429,9 @@ table.coloured tr:nth-child(even){
     .black_back {
         display: block;
     }
+    .container-base {
+        padding: 5px 15px 20px 15px;
+    }
     .container-black {
         padding: 5px 15px 20px 15px;
     }
@@ -382,14 +441,34 @@ table.coloured tr:nth-child(even){
     .container-gradation1 {
         padding: 5px 15px 20px 15px;
     }
+    .container-half {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
     .container-half-left {
         width: 100%;
         padding: 5px 15px 20px 15px;
         float: none;
+        margin-right: 0px;
     }
     .container-half-right {
         width: 100%;
         padding: 5px 15px 20px 15px;
+        float: none;
+    }
+
+    .container-quarter {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    .container-quarter-left {
+        width: 100%;
+        float: none;
+    }
+    .container-quarter-right {
+        width: 100%;
         float: none;
     }
 }

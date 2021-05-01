@@ -72,41 +72,12 @@
         </div>
         <div class="container-gradation1">
             <h2>メールアドレス</h2>
-            <p>
+            <p class="allow-drag">
                 husm.medinfolab%gmail.com<br>
+            </p>
+            <p>
                 %を@(アットマーク)に変えてください
             </p>
         </div>
-<script>
-var half_left  = document.getElementsByClassName('container-half-left');
-var half_right = document.getElementsByClassName('container-half-right');
-for ( var i = 0; i < Math.min(half_left.length, half_right.length); i++ ) {
-    if ( window.innerWidth < 750 ) {
-        half_left[i].style.height = "auto";
-        half_right[i].style.height = "auto";
-    }
-    else {
-        const height = Math.max(half_left[i].offsetHeight, half_right[i].offsetHeight);
-        half_left[i].style.height = height + "px";
-        half_right[i].style.height = height + "px";
-    }
-}
-$(window).resize(function() {
-    var half_left  = document.getElementsByClassName('container-half-left');
-    var half_right = document.getElementsByClassName('container-half-right');
-    for ( var i = 0; i < Math.min(half_left.length, half_right.length); i++ ) {
-        if ( window.innerWidth < 750 ) {
-            half_left[i].style.height = "auto";
-            half_right[i].style.height = "auto";
-        }
-        else {
-            const height = Math.max(half_left[i].offsetHeight, half_right[i].offsetHeight);
-            half_left[i].style.height = height + "px";
-            half_right[i].style.height = height + "px";
-        }
-    }
-});
-
-</script>
     </body>
 </html>

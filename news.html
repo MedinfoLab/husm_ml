@@ -71,7 +71,7 @@
         <div class="container-white">
             <h1 >お知らせ</h1>
         </div>
-        
+
         <div class="container-gradation1">
             <h1 style="margin-bottom:0px">ポスター第1弾</h1>
             <h4 style="margin-top: 0px; float:right">2021年4月26日</h6>
@@ -92,39 +92,5 @@
             </p>
             <h4 style="float:right; margin-top:0px">admin</h4>
         </div>
-
-
-
-<script>
-var half_left  = document.getElementsByClassName('container-half-left');
-var half_right = document.getElementsByClassName('container-half-right');
-for ( var i = 0; i < Math.min(half_left.length, half_right.length); i++ ) {
-    if ( window.innerWidth < 750 ) {
-        half_left[i].style.height = "auto";
-        half_right[i].style.height = "auto";
-    }
-    else {
-        const height = Math.max(half_left[i].offsetHeight, half_right[i].offsetHeight);
-        half_left[i].style.height = height + "px";
-        half_right[i].style.height = height + "px";
-    }
-}
-$(window).resize(function() {
-    var half_left  = document.getElementsByClassName('container-half-left');
-    var half_right = document.getElementsByClassName('container-half-right');
-    for ( var i = 0; i < Math.min(half_left.length, half_right.length); i++ ) {
-        if ( window.innerWidth < 750 ) {
-            half_left[i].style.height = "auto";
-            half_right[i].style.height = "auto";
-        }
-        else {
-            const height = Math.max(half_left[i].offsetHeight, half_right[i].offsetHeight);
-            half_left[i].style.height = height + "px";
-            half_right[i].style.height = height + "px";
-        }
-    }
-});
-
-</script>
     </body>
 </html>
