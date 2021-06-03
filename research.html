@@ -26,8 +26,17 @@
     <body style="margin:0px;" class="anti-drag">
 <!-- {{{ Header -->
 <header style="position: relative; z-index: 1825">
-    <div style="width:100%">
-        <ul class="topnav">
+    <div class="header" style="width:100%">
+        <div class="header-background"></div>
+
+        <input type="checkbox" id="toggle">
+
+        <label class="hamburger" for="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+
+        <ul class="header-links">
             <li><a href="./">トップ</a></li>
             <li><a href="./activities">活動内容</a></li>
             <li><a href="./research">研究</a></li>
@@ -36,43 +45,27 @@
             <li><a href="./contact">お問い合わせ</a></li>
         </ul>
     </div>
-    <div style="position: fixed; width: 100%">
-        <div class="cp_fullscreenmenu">
-            <div class="black_back" style="text-align:center">
-
-            </div>
-            <input class="hide" type="checkbox" id="toggle">
-
-            <label class="hamburger" for="toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </label>
-
-            <div class="menu">
-                <ul>
-                    <li><a class="iphone" href="./">トップ</a></li>
-                    <li><a class="iphone" href="./activities">活動内容</a></li>
-                    <li><a class="iphone" href="./research">研究</a></li>
-                    <li><a class="iphone" href="./members">メンバー紹介</a></li>
-                    <li><a class="iphone" href="./news">お知らせ</a></li>
-                    <li><a class="iphone" href="./contact">お問い合わせ</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </header>
 <!-- }}} -->
-        <div class="container-black">
-            <br><br><br>
-            <h1><nobr>浜松医科大学 <wbr>医療情報研究会</nobr></h1>
-            <h3><nobr>Hamamatsu University <wbr>School of Medicine <wbr>Medinfo Lab</nobr></h3>
+<!-- {{{ Title -->
+    <div style="height: 64px"></div>
+        <div class="title-base">
+            <div class="title-base-decoration">
+                <img class="logo" src="./img/husm_ml_logo.png">
+                <div style="display: inline-block;">
+                    <h1><span class="nobr">浜松医科大学</span> <span class="nobr">医療情報研究会</span></h1>
+                    <h3><span class="nobr">Hamamatsu University</span> <span class="nobr">School of Medicine</span> <span class="nobr">Medinfo Lab</span></h3>
+                </div>
+            </div>
         </div>
-        <div class="container-white">
-            <h1>研究</h1>
+<!-- }}} -->
+        <div class="subtitle-base">
+            <div class="subtitle-base-decoration">
+                <h1>研究</h1>
+            </div>
         </div>
         <div class="container-gradation1">
             <p>
-                <br>
                 Comming Soon......
             </p>
         </div>
