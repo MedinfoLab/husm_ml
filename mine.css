@@ -50,17 +50,18 @@ div.subtitle-base {
     box-sizing:border-box;
     width: 100%;
 }
-
 div.subtitle-base-decoration {
-    padding: 20px 15vw 20px 15vw;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: #EFEFEF;
+    padding-top: 16px;
+    background-color: #FFFFFF;
     -webkit-clip-path: polygon(0 0, 100% 16px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 16px, 100% 100%, 0 100%);
 }
-
+div.subtitle-base-decoration2 {
+    padding: 15px 15vw 20px 15vw;
+    text-align: center;
+    background-color: #EFEFEF;
+}
 
 div.container-base {
     padding: 20px 15vw 20px 15vw;
@@ -256,8 +257,8 @@ ul.members li {
     ul.members li {
         width: 100%;
     }
-    div.subtitle-base-decoration {
-        padding: 20px 15px 20px 15px;
+    div.subtitle-base-decoration2 {
+        padding: 15px 15px 20px 15px;
     }
     div.container-base {
         padding: 20px 15px 20px 15px;
@@ -271,5 +272,4 @@ ul.members li {
     div.container-gradation1 {
         padding: 20px 15px 20px 15px;
     }
-
 }
